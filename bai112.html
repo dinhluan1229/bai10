@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bảng cửu chương</h1>
+<script>
+  let i,j,scout;
+  scout="<table border='1' cellspacing='0' cellpadding='20' width='300'>";
+  i=j=1;
+  while (i<10){
+    scout=scout+ "<tr>";
+    while (j<10){
+      scout= scout+ "<td>"+i+'*'+j+'='+i*j+"</td>";
+      j++;
+    }
+    scout=scout+"<tr>";
+    j=1;
+    i++;
+  }
+  scout=scout+"<table>";
+  document.write(scout);
+</script>
+</body>
+</html>
