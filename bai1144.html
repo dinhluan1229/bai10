@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n = 0 , n1= 0, n2=0
+  let fibonacci = "";
+  let chia5;
+  for (let i=0; i<20;i++) {
+    if (i == 0) {
+      n = 1
+      n2 = 1
+      fibonacci += n + " "
+    } else{
+      n = n1 + n2
+    n1 = n2
+    n2 = n
+    fibonacci += n + " ";
+    if (n%5==0) {
+      chia5 = n;
+        document.write(chia5);
+      break;
+      }
+    }
+  }
+
+</script>
+</body>
+</html>
